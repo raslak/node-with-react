@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Header = props => {
   function renderContent() {
@@ -24,7 +25,9 @@ const Header = props => {
   return (
     <nav>
       <div className="nav-wrapper">
-        <a className="left brand-logo">Emaily</a>
+        <Link to={props.auth ? "/surveys" : "/"} className="left brand-logo">
+          Emaily
+        </Link>
         <ul className="right">{renderContent()}</ul>
       </div>
     </nav>
