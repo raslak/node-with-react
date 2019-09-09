@@ -11,9 +11,11 @@ const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
 const App = props => {
+  const { fetchUser } = props;
+
   useEffect(() => {
-    props.fetchUser();
-  }, []);
+    fetchUser();
+  }, [fetchUser]);
 
   return (
     <div className="container">
