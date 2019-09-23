@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import { connect } from "react-redux";
+import React, { useEffect } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-import * as actions from "../actions";
+import * as actions from '../actions';
 
-import Header from "./Header";
-import Landing from "./Landing";
+import Header from './Header';
+import Landing from './Landing';
+import Dashboard from './Dashboard';
 
-const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
 const App = props => {
